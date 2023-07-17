@@ -1,9 +1,19 @@
 <script lang="ts">
+	import { goto } from "$app/navigation"
+	import Hud from "$lib/components/hud.svelte"
+
+	let showHud = false
 	const firstName = "Colle"
 	const lastName = "Joulian"
-	let pos = {
+	let button = {
 		x: 0,
-		y: 0
+		y: 0,
+		position: "relative",
+		pv: 100,
+		maxpv: 100
+	}
+	function onFoo() {
+		console.log("mdr")
 	}
 </script>
 
@@ -31,14 +41,25 @@
 			href=".">Want</a
 		> to see what ?
 	</p>
-	<a
-		href="show-me"
+	<button
 		class=" hover:before:-right-[450%] hover:before:duration-[0.9s] hover:before:opacity-100 before:absolute before:block before:w-[400%] before:h-1/2 before:bg-white before:opacity-0 before:blur-lg before:-rotate-[15deg] before:right-full relative w-fit py-1 px-4 overflow-hidden bg-primary rounded-md text-2xl cursor-pointer text-white"
-		style={`transform: translate(${pos.x}px, ${pos.y}px)`}
-		on:mouseenter={() => {
-			pos.x = Math.round(Math.random() * 200)
-			pos.y = Math.round(Math.random() * 200)
+		style={`transform: translate(${button.x}px, ${button.y}px); position: ${button.position}`}
+		on:mouseenter={async () => {
+			await new Promise((res) => setTimeout(res, 150))
+			button.x = Math.round(Math.random() * 500)
+			button.y = Math.round(Math.random() * 500)
 		}}
-		data-sveltekit-preload-data="hover">Show me!</a
+		on:click={() => {
+			if (!showHud) {
+				showHud = true
+			}
+			button.pv -= 10
+			if (button.pv === 0) {
+				goto("show-me")
+			}
+		}}>Show me!</button
 	>
+	{#if showHud}
+		<Hud title="Button" current={button.pv} max={button.maxpv} />
+	{/if}
 </div>
