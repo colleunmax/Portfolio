@@ -55,13 +55,12 @@
 		</p>
 		{#if scenario === 1}
 			<p class="text-xl w-[600px]">
-				Excusez-moi, mais je sais que ça peut parraitre contre intuitif, mais pouvez vous arrêter de
-				me cliquer dessus ?
+				Excuse me, but I know it may seem counterintuitive, could you please stop clicking on me ?
 			</p>
 		{:else if scenario == 2}
 			<p class="text-xl w-[600px]">
-				Petit fils de pute de merde mal élevé, tu me fait vraimment chier, alors tu veux a ce point me cliquer dessus ?
-				sache que je ne me laiserais pas faire !
+				Son of a bitch, little piece of shit, fucking bastard ! Do you truly want to keep clicking on me like this?
+				I won't let you do so.
 			</p>
 		{:else if scenario == 3}
 		<p class="text-xl w-[600px]">
@@ -75,7 +74,7 @@
 					data-sveltekit-preload-data="hover"
 					href=".">you can't</a
 				>
-				do by your own !
+				do !
 				<a
 					class=" text-primary uppercase font-bold duration-200 hover:-translate-y-1 relative inline-block"
 					data-sveltekit-preload-data="hover"
