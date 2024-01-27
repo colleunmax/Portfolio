@@ -1,25 +1,13 @@
 <script lang="ts">
 	import { goto } from "$app/navigation"
 	import Hud from "$lib/components/hud.svelte"
-	import hit from "$lib/assets/hit.mp3"
-	import thisWay from "$lib/assets/thisWay.mp3"
-
-	function playHit() {
-		new Audio(hit).play()
-	}
-
-	function playBoss() {
-		const track = new Audio(thisWay)
-		track.volume = 0.1
-		track.loop = true
-		track.play()
-		return track
-	}
+	import playHit from "$lib/func/playHit";
+	import playBossMusic from "$lib/func/playBossMusic";
 
 	let cursorX: number;
 	let cursorY: number;
 
-	let musicBoss: Audio;
+	let musicBoss: any;
 	let movingInterval: NodeJS.Timeout;
 	let scenario = 0
 	let started = false
@@ -98,7 +86,7 @@
 					cinematic = true
 					setTimeout(() => {
 						cinematic = false
-						musicBoss = playBoss()
+						musicBoss = playBossMusic()
 						movingInterval = setInterval(() => {
 							button.x = Math.random() * 300
 							button.y = Math.random() * 300
