@@ -3,6 +3,7 @@
 	import Hud from "$lib/components/hud.svelte"
 	import playHit from "$lib/func/playHit";
 	import playBossMusic from "$lib/func/playBossMusic";
+	import HoverLetterTitle from "$lib/components/hoverLetterTitle.svelte"
 
 	let cursorX: number;
 	let cursorY: number;
@@ -30,16 +31,13 @@
 <div class=" flex flex-col gap-6">
 	<div>
 		<p class=" text-5xl font-bold selection:bg-transparent">
-			{#each scenario >= 2 ? scenario === 3 ? "KILL" : "OUCH!" : firstName as letter}
-				<span class=" text-primary duration-[4.5s] hover:duration-100 hover:text-black"
-					>{letter}</span
-				>
-			{/each}
-			{#each scenario >= 2 ? scenario === 3 ? "YOU!" : "çaFAITmal!" : lastName as letter}
-				<span class=" text-black duration-[4.5s] hover:duration-100 hover:text-primary"
-					>{letter}</span
-				>
-			{/each}
+			<HoverLetterTitle 
+				value={scenario >= 2 ? scenario === 3 ? "KILL" : "OUCH!" : firstName} 
+			/>
+			<HoverLetterTitle 
+				value={scenario >= 2 ? scenario === 3 ? "YOU!" : "çaFAITmal!" : lastName} 
+				blackToPrimary={true}
+			/>
 		</p>
 		{#if scenario === 1}
 			<p class="text-xl w-[600px]">
