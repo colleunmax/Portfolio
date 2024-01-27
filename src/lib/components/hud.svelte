@@ -3,7 +3,6 @@
 	export let current = 0
 	export let max = 0
     $: pourcentage = (current/max) * 100
-    $: console.log(pourcentage)
 </script>
 
 <div id="hud" class=" absolute top-0">
