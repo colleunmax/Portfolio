@@ -10,5 +10,7 @@ export default function Home() {
         <Education />
         ----------------------------
         <Projects />
+        ----------------------------
+        <Technologies />
     </main>
 }
