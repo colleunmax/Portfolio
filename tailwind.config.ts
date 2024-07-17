@@ -14,7 +14,8 @@ const config: Config = {
       "secondary-background": "#303437",
       "scroll-bar": "#436179",
       "love-gradiant-start": "#DB49FF",
-      "love-gradiant-end": "#FF3D00"
+      "love-gradiant-end": "#FF3D00",
+      "transparent": "transparent"
     }
   },
   plugins: [],
