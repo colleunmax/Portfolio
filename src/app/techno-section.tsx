@@ -9,6 +9,7 @@ import NextjsSvg from "@/components/icons/nextjs"
 import PythonSvg from "@/components/icons/python"
 import ReactSvg from "@/components/icons/reactjs"
 import TailwindcssSvg from "@/components/icons/tailwindcss"
+import TechnologyShowcase from "@/components/home/technology-showcase"
 import { Dispatch, useState } from "react"
 
 const technologies: techno[] = [
@@ -47,7 +48,7 @@ export default function Technologies() {
         <ul className="flex gap-6 flex-wrap justify-center">
             {TechnologiesFCs}
         </ul>
-        <p>test: {currentLang.name}</p>
+        <TechnologyShowcase Svg={currentLang.Svg} confidence={currentLang.confidence} preference={currentLang.preference} name={currentLang.name} />
 
     </section>
 }
