@@ -35,7 +35,7 @@ export default function Education() {
         </li>
     })
 
-    return <section id="education-section" className="flex flex-col items-center">
+    return <section id="education" className="flex flex-col items-center">
         <h2 className="font-bold text-2xl mb-6">Education</h2>
         <ul className="flex flex-col gap-6">
             {EductionCPs}
