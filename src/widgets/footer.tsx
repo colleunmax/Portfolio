@@ -29,7 +29,7 @@ export default function Footer() {
     const contactComponents = contacts.map(({svg, url, label}, i) => <li key={i}><MediaLink Svg={svg} href={url} label={label} /></li>)
 
     return <footer className="flex justify-center text-tern">
-        <div className="flex flex-row justify-between w-full mx-4 px-4 pt-6 pb-16 border-t-2" id="footer-main-container">
+        <div className="flex flex-row justify-between w-full mx-4 px-4 pt-6 pb-16 border-t-2 border-tern" id="footer-main-container">
             <ul className="flex flex-row gap-3" id="footer-media">{socialComponents}</ul>
             <ul className="flex flex-row gap-3" id="footer-contact">{contactComponents}</ul>
         </div>
