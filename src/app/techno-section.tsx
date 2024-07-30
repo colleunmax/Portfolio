@@ -43,7 +43,7 @@ export default function Technologies() {
         </li>
     })
 
-    return <section id="technologies" className="w-64 flex flex-col gap-6 items-center">
+    return <section id="technologies" className="w-64 flex flex-col gap-6 items-center col-span-2">
         <h2 className="font-bold text-2xl">Technologies</h2>
         <ul className="flex gap-6 flex-wrap justify-center">
             {TechnologiesFCs}
