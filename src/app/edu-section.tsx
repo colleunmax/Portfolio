@@ -25,7 +25,7 @@ export default function Education() {
 
         const currentSpan = current ? <span className="text-xs">(current)</span> : ""
 
-        return <li key={name} className="flex flex-col items-center italic">
+        return <li key={name} className="flex flex-col items-center italic intermediate-md:items-start">
             <h2 className="inline">{name}</h2>
             <p className="text-sm">{description}</p>
             <div className="flex gap-2 items-center">
@@ -35,7 +35,7 @@ export default function Education() {
         </li>
     })
 
-    return <section id="education" className="flex flex-col items-center">
+    return <section id="education" className="flex flex-col items-center intermediate-md:items-start">
         <h2 className="font-bold text-2xl mb-6">Education</h2>
         <ul className="flex flex-col gap-6">
             {EductionCPs}

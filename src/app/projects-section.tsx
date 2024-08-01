@@ -39,7 +39,7 @@ export default function Projects() {
         </li>
     }))
 
-    return <section className="flex flex-col gap-6 row-span-2 intermediate-md:bg-secondary-background intermediate-md:p-6 intermediate-md:rounded-md intermediate-md:h-[600px] intermediate-md:text-ternary" id="projects">
+    return <section className="flex flex-col gap-6 row-span-2 intermediate-md:bg-secondary-background intermediate-md:p-6 intermediate-md:rounded-md intermediate-md:text-ternary intermediate-md:h-full intermediate-md:overflow-auto" id="projects">
         <h2 className="font-bold text-2xl">Projects</h2>
         <ul className="w-64 flex flex-col gap-8 intermediate-md:w-full overflow-x-scroll scroll-smooth">
             {ProjectsCPs}
