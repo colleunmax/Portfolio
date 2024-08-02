@@ -1,7 +1,7 @@
 import { cutiveMono } from "@/fonts/cutiveMono"
 
 export default function Intro() {
-    return <section id="introduction" className="flex flex-col items-start">
+    return <section id="introduction" className="flex flex-col items-start intermediate-md:ml-8">
         <h1 className="font-bold intermediate-md:text-xl">Hey, I am-</h1>
         <div className="inline-block">
             <h1 className="text-3xl font-bold intermediate-md:text-5xl">Colle Joulian</h1>

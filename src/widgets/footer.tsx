@@ -28,10 +28,16 @@ export default function Footer() {
     const socialComponents = socials.map(({svg, url, label}, i) => <li key={i}><MediaLink Svg={svg} href={url} label={label} /></li>)
     const contactComponents = contacts.map(({svg, url, label}, i) => <li key={i}><MediaLink Svg={svg} href={url} label={label} /></li>)
 
-    return <footer className="flex justify-center text-tern">
-        <div className="flex flex-row justify-between w-full mx-4 px-4 pt-6 pb-16 border-t-2 border-tern intermediate-md:flex-col intermediate-md:border-t-0 intermediate-md:border-l-2" id="footer-main-container">
+    return <footer className="flex justify-center text-tern intermediate-md:flex-col">
+        <div className="
+        flex justify-between intermediate-md:items-center h-full
+        flex-row intermediate-md:flex-col
+        w-full intermediate-md:w-20
+        mx-4 px-4 pt-6 pb-16 intermediate-md:m-0 intermediate-md:py-12
+        border-t-2 border-tern intermediate-md:border-t-0 intermediate-md:border-l-2" id="footer-main-container">
             <ul className="flex flex-row gap-3 intermediate-md:flex-col" id="footer-media">{socialComponents}</ul>
             <ul className="flex flex-row gap-3 intermediate-md:flex-col" id="footer-contact">{contactComponents}</ul>
         </div>
+        <div className="hidden intermediate-md:block min-h-20 intermediate-md:border-t-2 intermediate-md:border-l-2 border-tern"></div>
     </footer>
 }

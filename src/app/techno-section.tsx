@@ -43,7 +43,11 @@ export default function Technologies() {
         </li>
     })
 
-    return <section id="technologies" className="w-64 flex flex-col gap-6 items-center col-span-2 intermediate-md:w-full intermediate-md:border-t-2 intermediate-md:border-tern">
+    return <section id="technologies" className="
+    flex flex-col gap-6 items-center col-span-2 intermediate-md:items-start intermediate-md:justify-center
+    w-64 intermediate-md:w-full intermediate-md:h-20
+    intermediate-md:border-t-2 intermediate-md:border-tern
+    intermediate-md:pl-8 intermediate-md:mt-8">
         <h2 className="font-bold text-2xl intermediate-md:hidden">Technologies</h2>
         <ul className="flex gap-6 flex-wrap justify-center">
             {TechnologiesFCs}

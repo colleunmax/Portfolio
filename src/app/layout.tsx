@@ -17,8 +17,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`intermediate-md:h-full ${jetBrainsMono.className}`}>
-      <body className=" bg-background text-primary flex flex-col h-full justify-between intermediate-md:flex-row">
+    <html lang="en" className={`intermediate-md:h-full flex items-center justify-center ${jetBrainsMono.className}`}>
+      <body className="
+      bg-background text-primary 
+      flex justify-between
+      flex-col intermediate-md:flex-row
+      h-full intermediate-md:min-h-[600px] intermediate-md:max-h-[900px] intermediate-md:max-w-[1920px]
+      intermediate-md:p-16">
         {children}
         <Footer />
       </body>

@@ -5,7 +5,13 @@ import Projects from "./projects-section"
 import Technologies from "./techno-section"
 
 export default function Home() {
-    return <main className="flex flex-col items-center gap-11 py-12 intermediate-md:grid intermediate-md:grid-cols-2 intermediate-md:mx-32 intermediate-md:h-full intermediate-md:min-h-[600px overflow-hidden">
+    return <main className="
+    flex flex-col items-center
+    gap-11 intermediate-md:gap-0
+    intermediate-md:grid intermediate-md:grid-cols-2 intermediate-md:items-start
+    py-12 intermediate-md:pb-0 intermediate-md:pt-8
+    intermediate-md:h-full
+    intermediate-md:overflow-hidden">
         <Intro />
         <Separation type={1} />
         <Education />

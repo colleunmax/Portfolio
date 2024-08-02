@@ -23,7 +23,7 @@ export default function TechnologyShowcase({Svg, confidence, preference}: Props)
         return <span className={`font-bold italic ${className}`}>{levelOf}</span>
     }
 
-    return <div id="selected-lang" className="flex items-center gap-4 bg-secondary-background py-2 px-2 rounded-sm min-w-64">
+    return <div id="selected-lang" className="flex items-center gap-4 bg-secondary-background py-2 px-2 rounded-sm min-w-64 intermediate-md:absolute intermediate-md:opacity-25">
         <Svg size={64} />
         <ul className=" capitalize text-sm text-nowrap text-ternary">
             <li>Confidence: <ConfidenceOrPreferenceFC levelOf={confidence} /></li>
