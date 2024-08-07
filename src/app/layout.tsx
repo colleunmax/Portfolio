@@ -19,6 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`intermediate-md:h-full flex items-center justify-center ${jetBrainsMono.className}`}>
       <body className="
+      selection:bg-primary
+      selection:text-secondary-background
       bg-background text-primary 
       flex justify-between
       flex-col intermediate-md:flex-row
