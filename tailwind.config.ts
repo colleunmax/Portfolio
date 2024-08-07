@@ -18,7 +18,7 @@ const config: Config = {
         "love-gradiant-end": "#FF3D00",
       },
       screens: {
-        "intermediate-md": { "min": "1400px"}
+        "intermediate-md": { "min": "1350px"}
       }
     }
   },
