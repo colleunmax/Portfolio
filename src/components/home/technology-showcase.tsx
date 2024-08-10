@@ -10,8 +10,6 @@ export default function TechnologyShowcase({Svg, confidence, preference}: Props)
     const ConfidenceOrPreferenceFC = ({levelOf}: {levelOf: confidenceType | preferenceType}) => {
         let className = ""
 
-        console.log(levelOf)
-
         switch (levelOf) {
             case "neutral": className = " text-ternary"; break
             case "ok": className = "text-secondary"; break
