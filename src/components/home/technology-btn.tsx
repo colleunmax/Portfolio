@@ -12,7 +12,7 @@ export default function TechnologyBtn({Svg, name, onClick}: Props) {
         onClick(event, name)
     }
 
-    return <button onClick={handleClick}>
+    return <button className="focus:outline-none focus:outline-2 focus:outline-secondary focus:outline-offset-2 focus:text-secondary" onClick={handleClick}>
         <Svg />
     </button>
 }

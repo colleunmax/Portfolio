@@ -47,10 +47,12 @@ export default function TechnologyHoverShowcase({Svg, name, confidence, preferen
     before:absolute
     before:-z-10 before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2
     before:rounded-b-full
+    cursor-pointer
     hover:before:block
     focus:before:block
     focus:outline-none
-    focus:outline-2 focus:outline-primary focus:rounded-full focus:-outline-offset-2">
+    focus:outline-2 focus:outline-primary focus:rounded-full focus:-outline-offset-2
+    focus:text-primary">
         <Svg />
         <div className={` text-primary absolute top-0 -translate-y-full -translate-x-2 ${HoveringClassName}`}>
             <TechnologyShowcase name={name} Svg={Svg} confidence={confidence} preference={preference} />

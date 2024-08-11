@@ -33,6 +33,7 @@ export default function Technologies() {
     const [width, setWidth] = useState(1920)
 
     useEffect(() => {
+        setWidth(window.innerWidth)
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener("resize", handleWindowResize)
         return () => window.removeEventListener("reize", handleWindowResize)
