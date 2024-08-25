@@ -46,10 +46,10 @@ export default function Projects() {
     intermediate-md:mr-8
     intermediate-md:rounded-md
     intermediate-md:h-full
-    intermediate-md:overflow-auto" id="projects">
+    intermediate-md:overflow-y-auto" id="projects">
         <h2 className="font-bold text-2xl">Projects</h2>
-        <ul className="w-64 flex flex-col gap-8 intermediate-md:w-full overflow-x-scroll scroll-smooth
-        focus:outline-none focus:outline-2 focus:outline-dashed focus:outline-primary focus:outline-offset-8">
+        <ul tabIndex={0} className="w-64 flex flex-col gap-8 intermediate-md:w-full intermediate-md:overflow-y-scroll scroll-smooth
+        focus:outline-none focus:outline-2 focus:outline-dashed focus:outline-primary focus:outline-offset-8 intermediate-md:pr-2">
             {ProjectsCPs}
         </ul>
     </section>

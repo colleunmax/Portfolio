@@ -6,3 +6,14 @@
 #education {
     grid-area: 2/1;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #436179;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #607180;
+    border-radius: 100px;
+}
