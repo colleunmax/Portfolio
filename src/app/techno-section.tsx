@@ -18,7 +18,7 @@ const technologies: techno[] = [
     {name: "Javascript", Svg: JavascriptSvg, confidence: "good", preference: "like"},
     {name: "Css", Svg: CssSvg, confidence: "good", preference: "like"},
     {name: "Html", Svg: HtmlSvg, confidence: "good", preference: "like"},
-    {name: "Tailwindcss", Svg: TailwindcssSvg, confidence: "ok", preference: "like"},
+    {name: "Tailwindcss", Svg: TailwindcssSvg, confidence: "ok", preference: "love"},
     {name: "React", Svg: ReactSvg, confidence: "ok", preference: "like"},
     {name: "Nextjs", Svg: NextjsSvg, confidence: "ok", preference: "like"},
     {name: "Linux", Svg: LinuxSvg, confidence: "ok", preference: "love"},
