@@ -13,7 +13,8 @@ export default function TechnologyShowcase({Svg, confidence, preference}: Props)
         switch (levelOf) {
             case "neutral": className = " text-ternary"; break
             case "ok": className = "text-secondary"; break
-            case "good" || "like": className = "text-primary"; break
+            case "like":
+            case "good": className = "text-primary"; break
             case "love": className = "bg-clip-text text-transparent bg-gradient-to-r from-love-gradiant-start to-love-gradiant-end"; break
             default: ""
         }
